@@ -1,49 +1,104 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Mission complexe</h1>
+                <h3>Comment mon apprentissage me confronte à une mission complexe</h3>
+                <p>
+                    <small><a href="http://emottet.com">Emilien Mottet</a> alternant ENSIMAG/MICHELIN</small>
+                </p>
+            </section>
+            <section>
+                <section>
+                    <h2>Migration SVN vers Gitlab </h2>
+                    <img src="doc/svn-to-git.png" alt="de SVN à git" />
+                </section>
+                <section>
+                    <img src="doc/chronique_changement.jpg" alt="Le changement" />
+                    <h3>Briser le sillotage</h3>
+                    <!-- Michelin migrer le logiciel de gestion de source pour changer les méthodes de dévelloppement -->
+                </section>
+                <section>
+                    <h3>Les moyens mis en oeuvre</h3>
+                    <ul>
+                        <li>Une équipe de 3</li>
+                        <li>De la formation</li>
+                        <li>Un service</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>les premiers résultats</h3>
+                    <img width="31%" src="doc/gitTotal.png" alt="nombre total d'utilisateurs git/gitlab">
+                    <img width="31%" src="doc/profilegit.png" alt="profiles des utilisateurs git/gitlab" />
+                    <img width="31%" src="doc/profilesvn.png" alt="profiles des utilisateurs svn" />
+                    <small>Décommission de SVN septembre 2018</small>
+                </section>
+                <section>
+                    <h3>Ma contribution technique</h3>
+                    <img src="doc/curvelang.png" alt="Popularité des langages" />
+                    <img src="doc/poputri.png" alt="Popularité des trigrammes" />
+                </section>
+            </section>
+            <section>Une mission complexe</section>
+            <section>Comment réagir face à cette complexité</section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+     Reveal.initialize({
+         slideNumber: true,
+            transition: 'slide',
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function() {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
 </html>
