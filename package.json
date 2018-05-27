@@ -1,7 +1,7 @@
 {
-  "name": "reveal.js",
+  "name": "J2A4",
   "version": "3.6.0",
-  "description": "The HTML Presentation Framework",
+  "description": "J2A4 présentation",
   "homepage": "http://revealjs.com",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
@@ -11,13 +11,13 @@
     "build": "grunt"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Emilien Mottet",
+    "email": "emilien.mottet@grenoble-inp.org",
+    "web": "http://emottet.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com:EmilienMottet/J2A4.gi"
   },
   "engines": {
     "node": ">=4.0.0"
